@@ -1,0 +1,70 @@
+<!-- @format -->
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="warning"> </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/login">Log in</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Create your<br />Account</h1>
+
+  <form id="form">
+    <ion-input
+      label="nama"
+      [(ngModel)]="form.nama"
+      shape="round"
+      type="email"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Enter Your Email"
+    ></ion-input>
+    <br />
+    <ion-input
+      label="email"
+      [(ngModel)]="form.email"
+      [ngModelOptions]="{standalone: true}"
+      shape="round"
+      type="text"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Enter Your FullName"
+    ></ion-input>
+    <br />
+    <ion-input
+      label="Password"
+      [(ngModel)]="form.password"
+      [ngModelOptions]="{standalone: true}"
+      shape="round"
+      type="Password"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Enter Your Password"
+    ></ion-input>
+    <br />
+    <ion-input
+      label="Confirmation Password"
+      [(ngModel)]="form.confirmation_password"
+      [ngModelOptions]="{standalone: true}"
+      shape="round"
+      type="Password"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Enter Your Password"
+    ></ion-input>
+    <ion-button
+      (click)="doSubmitWithValidateFormInput()"
+      color="warning"
+      expand="block"
+      shape="round"
+      >Join Us</ion-button
+    >
+  </form>
+
+  <p>By pressing 'Join Us' you agree to <br />our terms & conditions.</p>
+</ion-content>

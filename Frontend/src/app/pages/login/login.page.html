@@ -1,0 +1,53 @@
+<!-- @format -->
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> <b>Login</b> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <img src="assets/image/Logo.png" />
+  </div>
+
+  <form id="form">
+    <ion-input
+      label="Email"
+      [(ngModel)]="form.email"
+      [ngModelOptions]="{standalone: true}"
+      shape="round"
+      type="text"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Enter Your Email"
+    ></ion-input>
+    <br />
+    <ion-input
+      label="Password"
+      [(ngModel)]="form.password"
+      [ngModelOptions]="{standalone: true}"
+      shape="round"
+      type="password"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Enter Your Password"
+    ></ion-input>
+    <ion-button
+      fill="solid"
+      (click)="doSubmitWithValidateFormInput()"
+      color="warning"
+      expand="block"
+      shape="round"
+      >Login</ion-button
+    >
+    <ion-button
+      fill="outline"
+      routerLink="/signup"
+      color="warning"
+      expand="block"
+      shape="round"
+      >Signup</ion-button
+    >
+  </form>
+</ion-content>

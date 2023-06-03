@@ -1,0 +1,7 @@
+{
+  "name": "TokoBuku",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

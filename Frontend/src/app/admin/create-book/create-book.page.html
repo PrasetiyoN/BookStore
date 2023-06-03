@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar default href>
+    <ion-title>Create-Book</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Penambahan Buku</ion-card-title>
+      <ion-card-subtitle>Akses melalui Post</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input
+        label="Judul Buku"
+        [(ngModel)]="judul"
+        [ngModelOptions]="{standalone: true}"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Enter text"
+      ></ion-input>
+      <br />
+      <ion-input
+        label="Penulis"
+        [(ngModel)]="penulis"
+        [ngModelOptions]="{standalone: true}"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Enter text"
+      ></ion-input>
+      <br />
+      <input type="file" (change)="onFileChange($event)" />
+      <br />
+      <ion-input
+        label="harga"
+        [(ngModel)]="harga"
+        [ngModelOptions]="{standalone: true}"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Enter text"
+      ></ion-input>
+      <br />
+      <ion-input
+        label="Deskripsi"
+        [(ngModel)]="deskripsi"
+        [ngModelOptions]="{standalone: true}"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Enter text"
+      ></ion-input>
+      <br />
+      <ion-input
+        label="User Email"
+        [(ngModel)]="user_email"
+        [ngModelOptions]="{standalone: true}"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Enter text"
+      ></ion-input>
+      <br />
+      <ion-input
+        label="kategori"
+        [(ngModel)]="kategori"
+        [ngModelOptions]="{standalone: true}"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Enter text"
+      ></ion-input>
+      <br />
+    </ion-card-content>
+
+    <ion-button expand="block" (click)="doSubmitWithValidateFormInput()"
+      >Submit</ion-button
+    >
+  </ion-card>
+</ion-content>

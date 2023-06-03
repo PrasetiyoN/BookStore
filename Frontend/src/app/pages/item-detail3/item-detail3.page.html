@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title><b>Item Detail</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Naruto Shibudin vol66</ion-card-title>
+      <ion-card-subtitle>Masashi Kishimoto</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-img
+        class="img-detail"
+        src="../../../assets/image/Naruto Shibudin.jpg"
+      ></ion-img>
+      <ion-item>
+        <ion-label>Rp. 60.000</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label class="ion-text-wrap">
+          Untuk melindungi teman-temannya dari kekuatan besar Madara dan
+          kawan-kawan, Naruto mengerahkan kekuatan cakra kyubi. Tapi, daya
+          penghancur jubi yang dahsyat terus mendesak tentara gabungan shinobi.
+          Saat mereka sedang terdesak, bantuan terkuat akhirnya tiba di medan
+          perang!
+        </ion-label>
+      </ion-item>
+
+      <ion-button
+        class="btn-checkout"
+        color="success"
+        fill="solid"
+        routerLink="/checkout"
+        >Checkout Now</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+</ion-content>

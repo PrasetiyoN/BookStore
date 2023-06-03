@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title><b>Home</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card routerLink="/create-book" color="primary">
+    <ion-card-header>
+      <ion-card-title>Create Books</ion-card-title>
+      <ion-card-subtitle>Akses Melalui POST</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <hr />
+  <ion-card routerLink="/update-book" color="warning">
+    <ion-card-header>
+      <ion-card-title>Update Books</ion-card-title>
+      <ion-card-subtitle>Akses Melalui PUT</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <hr />
+  <ion-card routerLink="/delete-book" color="danger">
+    <ion-card-header>
+      <ion-card-title>Delete Books</ion-card-title>
+      <ion-card-subtitle>Akses Melalui DELETE</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <hr />
+</ion-content>
